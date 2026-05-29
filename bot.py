@@ -60,7 +60,7 @@ def back_kb():
 @dp.message(CommandStart())
 async def cmd_start(message: Message):
     text = (
-        "⚽ <b>Football Insider</b>\n\n"
+        "⚽ <b>MatchPulse</b>\n\n"
         "Your go-to source for football statistics!\n\n"
         "• 🏆 League standings in real-time\n"
         "• ⚽ Today's matches & schedule\n"
@@ -72,7 +72,7 @@ async def cmd_start(message: Message):
 
 @dp.callback_query(F.data == "main_menu")
 async def cb_main_menu(callback: CallbackQuery):
-    await callback.message.answer("⚽ <b>Football Insider</b>\n\nSelect an option:", parse_mode="HTML", reply_markup=main_menu_kb())
+    await callback.message.answer("⚽ <b>MatchPulse</b>\n\nSelect an option:", parse_mode="HTML", reply_markup=main_menu_kb())
     await callback.answer()
 
 @dp.callback_query(F.data == "menu_standings")
