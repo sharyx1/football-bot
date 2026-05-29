@@ -1,2 +1,5 @@
-[phases.setup] 
-nixPkgs = ["python311", "gcc", "libffi", "openssl"] 
+[phases.setup]
+nixPkgs = ["python311"]
+
+[variables]
+NIXPACKS_PYTHON_VERSION = "3.11"
